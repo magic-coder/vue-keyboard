@@ -1,4 +1,4 @@
-# venus
+# vue-keyboard
 
 > A Vue.js project
 

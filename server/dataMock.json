@@ -1,0 +1,161 @@
+{
+  "head": { 
+    "platform": "RBJF",
+    "requestType": 10,
+    "timeStamp": "",
+    "extTransactionNo": "",
+    "localTransactionNo": "",
+    "systemId": "system",
+    "MD5": "",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  "body": {
+    "mainInfo": {
+      "orderNo": "",
+      "relationFlag": "",
+      "busiStartDate": "",
+      "bzStartDate": "",
+      "effectiveImmediatelyFlag": "",
+      "cityCode": "",
+      "beneficiary": "",
+      "busiProposalNo": "",
+      "busiPolicyNo": "",
+      "bzProposalNo": "",
+      "bzPolicyNo": "",
+      "busiPolicyUrl": "",
+      "bzPolicyUrl": "",
+      "status": "",
+      "channelId": "",
+      "agentCode": "",
+      "userId": ""
+    },
+    "applicantInfo": {
+      "birthday": "",
+      "idNo": "",
+      "idType": 1,
+      "idName": "",
+      "sex": 1,
+      "mobile": "",
+      "email": "",
+      "address": "",
+      "insuredType": "1"
+    },
+    "insuredInfo": {
+      "birthday": "",
+      "idNo": "",
+      "idType": 1,
+      "idName": "",
+      "sex": 1,
+      "mobile": "",
+      "email": "",
+      "address": "",
+      "insuredType": "2"
+    },
+    "carOwnerInfo": {
+      "birthday": "",
+      "idNo": "",
+      "idType": 1,
+      "idName": "",
+      "sex": 1,
+      "mobile": "",
+      "email": "",
+      "address": "",
+      "insuredType": "4"
+    },
+    "destinationInfo": {
+      "idName": "",
+      "mobile": "",
+      "email": "",
+      "sendDate": "",
+      "invoice": "",
+      "province": "",
+      "city": "",
+      "town": "",
+      "address": ""
+    },
+    "carInfo": {
+      "licenseNoFlag": "",
+      "isCarOutSide": "",
+      "licenseNo": "",
+      "frameNo": "",
+      "engineNo": "",
+      "invoiceNo": "",
+      "invoiceDate": "",
+      "enrollDate": "",
+      "modelcCode": "",
+      "brandName": "",
+      "countryNature": "",
+      "tonCount": "",
+      "exhaustScale": "",
+      "seatCount": "",
+      "wholeWeight": "",
+      "purchasePrice": "",
+      "actualValue": "",
+      "fuelType": "",
+      "chgOwnerFlag": "",
+      "transferDate": "",
+      "isLoanVehicleFlag": "",
+      "remark": ""
+    },
+    "itemKindInfos": [
+      {
+        "insurenceList": {
+          "bzSumAmount": 0,
+          "bzSumPremium": 0,
+          "busiSumAmount": 0,
+          "busiSumPremium": 0,
+          "insurenceCode": "",
+          "discount": "",
+          "extendInfo": {
+          },
+          "itemKindInfo": [
+            {
+              "kindCode": "",
+              "kindName": "",
+              "m1Value": "",
+              "unitAmount": "",
+              "quantity": "",
+              "amount": "",
+              "m1Premium": "",
+              "benchmarkPremium": "",
+              "premium": ""
+            },
+            {
+              "kindCode": "",
+              "kindName": "",
+              "m1Value": "",
+              "unitAmount": "",
+              "quantity": "",
+              "amount": "",
+              "m1Premium": "",
+              "benchmarkPremium": "",
+              "premium": ""
+            }
+          ],
+          "carShipTax": {
+            "taxRelifFlag": "",
+            "taxPayerName": "",
+            "taxPayerIDNo": "",
+            "taxPayerIDType": "",
+            "baseTaxation": "",
+            "relifReason": "",
+            "freeRate": "",
+            "payStartDate": "",
+            "payEndDate": "",
+            "paidFreeCertificate": "",
+            "kTaxComCode": "",
+            "kTaxComName": "",
+            "taxComCode": "",
+            "taxComName": "",
+            "payLastYear": "",
+            "taxActual": "",
+            "taxDue": "",
+            "taxRelief": "",
+            "lateFee": ""
+          }
+        }
+      }
+    ]
+  }
+}

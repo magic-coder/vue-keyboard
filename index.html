@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>vue-keyboard</title>
+  </head>
+  <body>
+    <div id="app">
+      <p style="font-size: 14px;text-align: center;color:#cdcdcd;padding-top: 200px">努力加载中...</p>
+    </div>
+    <!-- built files will be auto injected -->
+    <script>
+      function rem2html(){
+        var html = document.documentElement
+        window.rem = html.getBoundingClientRect().width / 7.5
+        html.style.fontSize = window.rem + 'px'
+      }
+
+      window.onresize = function (){
+        rem2html()
+      }
+
+      rem2html()
+    </script>
+  </body>
+</html>

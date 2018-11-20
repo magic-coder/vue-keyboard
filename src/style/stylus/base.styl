@@ -1,0 +1,225 @@
+@import "./variable.styl"
+
+body, html
+  line-height: 1
+  // user-select: none
+  -webkit-tap-highlight-color: transparent
+  background: $color-background
+  color: $color-text
+  font-size $font-size-medium-x
+
+box-sizing()
+  box-sizing arguments
+  -moz-box-sizing arguments
+  -webkit-box-sizing arguments
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+.mint-switch-input:checked+.mint-switch-core
+  border-color #27adaa !important
+  background-color #4CD964 !important
+  // background-image: linear-gradient(-90deg,
+  // #358dd1 0%,
+  // #1ccab8 100%),
+  // linear-gradient(#27adaa, #27adaa);
+  background-blend-mode: normal, normal;
+
+.mint-cell
+  min-height .88rem!important
+.mint-cell-wrapper
+  font-size $font-size-medium!important
+  padding 0!important
+  background-image none!important
+.mint-field-core
+  color $color-text
+.mint-field-state .mintui
+  font-size .4rem !important
+.mintui
+  font-size .4rem !important
+.mint-switch
+  top 50%
+  .mint-switch-core
+    width 1.0rem
+    height 0.6rem
+    background #ebedf0
+    border none
+    &:before
+      width 0.96rem
+      height 0.56rem
+      background none
+    &:after
+      width 0.48rem
+      height 0.48rem
+      box-shadow none
+      top 0.06rem
+      left 0.06rem
+#insuranceInfo
+  .mint-switch
+    margin-top: -0.24rem
+
+.fn-clearfix:after{
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.fn-clearfix {
+  zoom: 1;
+}
+.mint-msgbox-wrapper
+  .mint-msgbox
+    border-radius 0.16rem
+  .mint-msgbox-header
+    font-family: PingFangSC-Medium
+    font-size: .34rem
+    padding-top .24rem !important
+    padding-bottom -.24rem !important
+    color: #111111
+    line-height: .52rem
+    margin-bottom -0.24rem
+  .mint-msgbox-content
+    padding 0
+    border: none
+  .mint-msgbox-message
+    font-family: PingFangSC-Regular
+    padding .48rem .4rem .48rem .4rem
+    font-size: .3rem
+    color: #111111
+    line-height: .46rem
+    text-align left
+  .confirmButton
+    background #f2f3f5
+.mint-field-clear
+  margin-right 0.16rem
+//  光标
+.cursor-blink
+  color #555
+  display inline-block
+  vertical-align bottom
+  width 1px
+  height 0.3rem
+  //margin-left 2px
+  background-color #555
+  -webkit-animation 1s step-start 0s normal none infinite running blink
+  animation 1s step-start 0s normal none infinite running blink
+  -webkit-animation blink 1s infinite step-start
+  animation blink 1s infinite step-start
+  @keyframes blink
+    0%, 100%
+      background-color #555
+      color #aaa
+    50%
+      background-color transparent
+      color #555
+.col_blue
+  color #0099da
+.mint-msgbox-btns
+  height: .88rem !important
+  line-height: .88rem
+  background: #F8F8F8
+  border-top 1px solid #eee !important
+  .mint-msgbox-btn
+    font-size .34rem
+.mint-msgbox-cancel
+  background: #F8F8F8 !important
+  font-size: .34rem !important
+  color: #999 !important
+  border-right 0.5px solid #eee !important
+.mint-msgbox-confirm
+  height: .88rem !important
+  line-height: .88rem !important
+  font-size: .34rem !important
+  background: #F8F8F8 !important
+  color: #3F75D9 !important
+#app
+  .mint-datetime
+    padding 0!important
+    .picker-toolbar
+      height 0.88rem
+      line-height 0.88rem
+      background #f2f3f5
+      .mint-datetime-action
+        font-size $font-size-large-s
+        line-height 0.88rem
+      .mint-datetime-cancel
+        color: #999
+        font-size: .32rem
+        text-align left
+        padding-left 0.28rem
+        box-sizing(border-box)
+      .mint-datetime-confirm
+        font-size: .32rem
+        color: #3F75D9
+        text-align right
+        padding-right 0.28rem
+        box-sizing(border-box)
+    .picker-items
+      font-size $font-size-32
+      padding 0 0.75rem
+      .picker-item
+        font-family: PingFangSC-Regular
+        font-size: .3rem
+        color: #bbb
+        line-height: .72rem
+      .picker-selected
+        font-family: PingFangSC-Regular
+        font-size: .3rem
+        color: #111111
+      .picker-center-highlight
+        background #F9FAFC
+        z-index -1
+      .picker-center-highlight:before
+        background-color #f2f3f5
+      .picker-center-highlight:after
+        background-color #f2f3f5
+  .city-picker
+    padding 0!important
+    .picker-toolbar
+      height 0.88rem
+      line-height 0.88rem
+      background: #F8F8F8
+      span
+        width 50%
+        float left
+        font-size $font-size-large-s
+        line-height 0.88rem
+      span:first-child
+        color #b8bec8
+        text-align left
+        padding-left 0.3rem
+        box-sizing(border-box)
+      span:last-child
+        color #0099da
+        text-align right
+        padding-right 0.3rem
+        box-sizing(border-box)
+    .picker-items
+      font-size $font-size-32
+      padding 0 0.75rem
+      .picker-item
+        font-family: PingFangSC-Regular
+        font-size: .3rem
+        color: #bbb
+        line-height: .72rem
+      .picker-selected
+        font-family: PingFangSC-Regular
+        font-size: .3rem
+        color: #111111
+      .picker-center-highlight
+        background #F9FAFC
+        z-index -1
+      .picker-center-highlight:before
+        background-color #f2f3f5
+      .picker-center-highlight:after
+        background-color #f2f3f5
+
+.mint-toast
+  z-index 1002 !important
+
+.v-modal
+  top 0
+  bottom 0
